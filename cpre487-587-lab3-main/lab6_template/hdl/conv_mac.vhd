@@ -13,6 +13,8 @@ entity conv_mac is
   generic(
       C_DATA_WIDTH : integer := 32;
       C_OUTPUT_DATA_WIDTH : integer := 32
+      -- input data width is 8 bits
+      N : integer := 8
     );
     port (  
         S_AXIS_TREADY : out std_logic;
@@ -38,8 +40,37 @@ architecture behavioral of conv_mac is
 
 -- TODO
 
+
+-- Signal instantiation
+
+-- two 8 bit signal inputs
+signal i_A : std_logic_vector(N-1 downto 0);
+signal i_B : std_logic_vector(N-1 downto 0);
+
+-- multiplication out
+signal o_Mul : std_logic_vector(C_DATA_WIDTH - 1 downto 0);
+
+-- addition out
+signal o_Add : std_logic_vector(C_DATA_WIDTH -1 downto 0);
+
+-- accumulator out
+signal o_Accumulator : std_logic_vector(C_DATA_WIDTH -1 downto 0);
+
+
+
 begin
 
 -- TODO
+
+-- 8 bit multiplyer with a 32 bit result
+mult_process : process(i_A, i_B) is
+    begin
+        
+
+
+    end process mult_process;
+-- adder
+
+-- accumulator
 
 end architecture behavioral;
