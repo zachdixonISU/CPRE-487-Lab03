@@ -1,0 +1,81 @@
+[N
+7
+7
+1 N
+3
+8 behavior
+5
+12 C_DATA_WIDTH
+6
+19 C_OUTPUT_DATA_WIDTH
+2
+11 tb_conv_mac
+1
+85 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/work
+4
+9 gCLK_HPER
+]
+[G
+1
+2
+3
+1
+6
+0
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+0
+0
+0
+0
+8 8
+-128
+-16
+-6
+2
+0
+0
+0
+0
+0
+0
+]
+[G
+1
+2
+3
+1
+7
+0
+0
+8
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+5
+1
+0
+32
+0
+0 0
+0
+0
+]

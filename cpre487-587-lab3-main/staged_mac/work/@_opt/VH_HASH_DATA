@@ -1,0 +1,41 @@
+[N
+5
+4
+12 C_DATA_WIDTH
+2
+10 staged_mac
+3
+10 behavioral
+1
+82 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/work
+5
+14 C_OUTPUT_WIDTH
+]
+[G
+1
+2
+3
+1
+5
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+8
+0
+0 0
+0
+0
+]

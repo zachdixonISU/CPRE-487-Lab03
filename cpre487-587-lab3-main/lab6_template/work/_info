@@ -1,0 +1,149 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 d/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template
+T_opt
+!i145 1
+!i144 0
+!s110 1789412436
+VZ>cA16?aJWCZfI4oZ[CnZ3
+04 11 8 work tb_conv_mac behavior 1
+=5-005056b623e8-6aa84453-c9ce6-4b03
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+!i152 0
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2026.2;84
+Econv_accelerator_tb
+w1789148309
+Z3 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z4 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 6
+R2
+8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_accelerator_tb.vhd
+F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_accelerator_tb.vhd
+l0
+Z6 L12 1
+V^7J`5VKSa;CIe3DMng@PQ0
+!s100 24mccR0k[IF^MNC4ca1n91
+Z7 OL;C;2026.2;84
+33
+!s110 1789411479
+!i10b 1
+!s108 1789411479.000000
+!s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_accelerator_tb.vhd|
+!s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_accelerator_tb.vhd|
+!i113 0
+Z8 o-work work
+Z9 tExplicit 1 NoCoverage 1 CvgOpt 0
+Econv_mac
+Z10 w1789410739
+R3
+R4
+R5
+!i122 1
+R2
+Z11 8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/hdl/conv_mac.vhd
+Z12 F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/hdl/conv_mac.vhd
+l0
+R6
+Vh;b>;:XUkKacTdYPGP9PX2
+!s100 KV3MCPVeJA6MO?FG1YY4Z1
+R7
+32
+Z13 !s110 1789410744
+!i10b 1
+Z14 !s108 1789410744.000000
+Z15 !s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/hdl/conv_mac.vhd|
+Z16 !s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/hdl/conv_mac.vhd|
+!i113 0
+R8
+Z17 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+DEx4 work 8 conv_mac 0 22 h;b>;:XUkKacTdYPGP9PX2
+!i122 1
+l61
+L39 79
+VI=?:UZ82Zeh_INVTID>mM0
+!s100 3cJW`]XP6mS;HFiV0>aMk2
+R7
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R8
+R17
+Etb_conv_mac
+Z18 w1789412419
+R3
+R4
+R5
+!i122 10
+R2
+Z19 8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_mac_tb.vhd
+Z20 F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_mac_tb.vhd
+l0
+L14 1
+V^LIKfOP]YbLfm<oMcHV691
+!s100 0VA[dfd4>KPFB_@CJjem41
+R7
+33
+Z21 !s110 1789412430
+!i10b 1
+Z22 !s108 1789412430.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_mac_tb.vhd|
+Z24 !s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/lab6_template/tb/conv_mac_tb.vhd|
+!i113 0
+R8
+R9
+Abehavior
+R3
+R4
+R5
+DEx4 work 11 tb_conv_mac 0 22 ^LIKfOP]YbLfm<oMcHV691
+!i122 10
+l62
+L22 99
+Vh]ziChT@KizRI0:B:bDGE2
+!s100 NCe_0aPH1eJ>]^>Jh8AFK3
+R7
+33
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R8
+R9

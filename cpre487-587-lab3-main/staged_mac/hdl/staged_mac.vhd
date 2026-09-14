@@ -23,7 +23,9 @@ use IEEE.numeric_std.all;
 entity staged_mac is
   generic(
       -- Parameters of mac
-      C_DATA_WIDTH : integer := 8
+      C_DATA_WIDTH : integer := 8;
+      C_OUTPUT_WIDTH : integer := 32
+
     );
 	port (
         ACLK	: in	std_logic;
@@ -54,19 +56,28 @@ end staged_mac;
 architecture behavioral of staged_mac is
     -- Internal Signals
 	
+    signal i_A : std_logic_vector(C_DATA_WIDTH -1 downto 0);
+    signal i_B: std_logic_vector(C_DATA_WIDTH -1 downto 0);
+    signal sum : std_logic_vector(31 downto 0);
+    signal o_Accumulator : std_logic_vector(C_OUTPUT_WIDTH - 1 downto 0);
+    
 	
 	-- Mac state
-    type STATE_TYPE is (WAIT_FOR_VALUES);
+    type STATE_TYPE is (WAIT_FOR_VALUES, HAVE_VALUES);
+
     signal state : STATE_TYPE;
 	
 	-- Debug signals, make sure we aren't going crazy
     signal mac_debug : std_logic_vector(31 downto 0);
 
+    
+    
 begin
 
     -- Interface signals
-
-
+    i_A <= SD_AXIS_TDATA(C_DATA_WIDTH * 2 -1 downto C_DATA_WIDTH);
+    i_B <= SD_AXIS_TDATA(C_DATA_WIDTH -1 downto 0);
+    
     -- Internal signals
 	
 	
@@ -79,6 +90,7 @@ begin
 
       -- Reset values if reset is low
       if ARESETN = '0' then  -- Reset
+        o_Accumulator <= (others => '0');
         state       <= WAIT_FOR_VALUES;
 
       else
@@ -86,10 +98,34 @@ begin
             -- Wait here until we receive values
             when WAIT_FOR_VALUES =>
                 -- Wait here until we recieve valid values
-			
+                if(SD_AXIS_TVALID = '1') then
+                    state <= HAVE_VALUES;
+                end if;
 			
 			-- Other stages go here	
-			
+			when HAVE_VALUES =>
+                
+                if(SD_AXIS_TVALID = '1') then
+                    if(SD_AXIS_TLAST = '1') then
+                        SD_AXIS_TREADY <= '1';
+                        o_Accumulator <= (others => '0');
+                        MO_AXIS_TDATA <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));
+                        state <= WAIT_FOR_VALUES;
+                        MO_AXIS_TVALID <= '0';
+
+                    else
+                        o_Accumulator <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));
+                        MO_AXIS_TDATA <= o_Accumulator;
+                        SD_AXIS_TREADY <= '0';
+                        MO_AXIS_TVALID <= '1';
+
+                    end if;
+
+
+
+                end if;
+                
+                
             when others =>
                 state <= WAIT_FOR_VALUES;
                 -- Not really important, this case should never happen
