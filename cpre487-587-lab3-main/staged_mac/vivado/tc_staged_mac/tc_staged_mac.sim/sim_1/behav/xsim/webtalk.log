@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep 14 23:32:40 2026
+# Process ID: 66807
+# Current directory: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/behav/xsim/xsim.dir/staged_mac_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.sim/sim_1/behav/xsim/xsim.dir/staged_mac_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 14 23:32:40 2026...

@@ -23,7 +23,8 @@ use IEEE.numeric_std.all;
 entity piped_mac is
   generic(
       -- Parameters of mac
-      C_DATA_WIDTH : integer := 8
+      C_DATA_WIDTH : integer := 8;
+      FourBytes : integer := 32;
     );
 	port (
         ACLK	: in	std_logic;
@@ -54,9 +55,33 @@ end piped_mac;
 architecture behavioral of piped_mac is
     -- Internal Signals
 	
+
+    -- input stage signals
+    
+    signal i_Accumulator : std_logic_vector(FourBytes - 1 downto 0);
+    signal i_A : std_logic_vector(C_DATA_WIDTH -1 downto 0);
+    signal i_B : std_logic_vector(C_DATA_WIDTH - 1 downto 0);
+
+    -- multiply stage signals
+    signal i_Mul_Accumulator : std_logic_vector(FourBytes -1 downto 0);
+    signal o_A : std_logic_vector(C_DATA_WIDTH -1 downto 0);
+    signal o_B : std_logic_vector(C_DATA_WIDTH - 1 downto 0);
+    signal i_Mul : std_logic_vector(FourBytes -1 downto 0);
+
+    -- add stage signals
+    signal o_Add_Accumulator : std_logic_vector(FourBytes - 1 downto 0);
+    signal i_Add : std_logic_vector(FourBytes - 1 downto 0);
+    signal o_Sum : std_logic_vector(FourBytes -1 downto 0);
+    --wb stage signals
+
+    signal o_Add : std_logic_vector(FourBytes -1  downto 0);
+
+
+   
+
 	
 	-- Mac stages
-    type PIPE_STAGES is (TEMP_STAGE0);
+    type PIPE_STAGES is (INPUT_STAGE, MUL_STAGE, ADD_STAGE, WB_STAGE);
 
 	
 	-- Debug signals, make sure we aren't going crazy
@@ -83,8 +108,14 @@ begin
       else
         for i in PIPE_STAGES'left to PIPE_STAGES'right loop
             case i is  -- Stages
-                when TEMP_STAGE0 =>
-					-- Template pipline stage 0         
+                when INPUT_STAGE =>
+					-- Template pipline stage 0     
+                when MUL_STAGE =>
+                
+                when ADD_STAGE =>
+
+                when WB_STAGE =>
+
             end case;  -- Stages
 		end loop;  -- Stages
       end if;  -- Reset
