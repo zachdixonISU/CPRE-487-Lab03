@@ -56,10 +56,12 @@ end staged_mac;
 architecture behavioral of staged_mac is
     -- Internal Signals
 	
+    -- two input signals
     signal i_A : std_logic_vector(C_DATA_WIDTH -1 downto 0);
     signal i_B: std_logic_vector(C_DATA_WIDTH -1 downto 0);
-    signal sum : std_logic_vector(31 downto 0);
+    -- Accumulator Register
     signal o_Accumulator : std_logic_vector(C_OUTPUT_WIDTH - 1 downto 0);
+    -- TID register
     signal s_hold_TID : std_logic_vector(C_DATA_WIDTH - 1 downto 0);
 	
 	-- Mac state
