@@ -87,7 +87,7 @@ begin
    process (ACLK) is
    begin 
     if rising_edge(ACLK) then  -- Rising Edge
-
+        SD_AXIS_TREADY <= '1';
       -- Reset values if reset is low
       if ARESETN = '0' then  -- Reset
         o_Accumulator <= (others => '0');
@@ -97,6 +97,9 @@ begin
       else
         case state is  -- State
             -- Wait here until we receive values
+----------------------------------------------------------------------------------------------------------------
+----------------------------------WAITING FOR VALUES------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
             when WAIT_FOR_VALUES =>
                 -- Wait here until we recieve valid values
 
@@ -118,7 +121,6 @@ begin
 
                     -- last segment of data
                     if(SD_AXIS_TLAST = '1') then 
-                        SD_AXIS_TREADY <= '1';
                         state <= WAIT_FOR_VALUES;
                         MO_AXIS_TVALID <= '1';
                         MO_AXIS_TID <= SD_AXIS_TID;
@@ -126,8 +128,8 @@ begin
                     else
                     -- normal flow into HAVE_VALUES state
                         MO_AXIS_TLAST <= '0';
-                        state <= HAVE_VALUES;
                         MO_AXIS_TVALID <= '0';
+                        state <= HAVE_VALUES;
                     end if;
 
                 -- non valid data
@@ -136,7 +138,9 @@ begin
                 end if;
             
 
-
+----------------------------------------------------------------------------------------------------------------
+------------------------------------- HAVE VALUES---------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
             -- we have values 
 			when HAVE_VALUES =>
                 -- valid data
@@ -144,30 +148,24 @@ begin
 
                     -- last piec of data
                     if (SD_AXIS_TLAST = '1') then
-                        
-                        SD_AXIS_TREADY <= '1';
+
                         MO_AXIS_TDATA <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));
                         o_Accumulator <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));
                         state <= WAIT_FOR_VALUES;
-                        MO_AXIS_TVALID <= '0';
                         MO_AXIS_TID <= s_hold_TID;
                         MO_AXIS_TLAST <= '1';
+                        MO_AXIS_TVALID <= '1';
 
                     else
                         -- input into Accumulator
                         if(SD_AXIS_TUSER = '1') then
                             o_Accumulator <= std_logic_vector(resize(unsigned (i_B), C_OUTPUT_WIDTH));
-                            MO_AXIS_TDATA <= o_Accumulator;
-                            SD_AXIS_TREADY <= '1';
-                            MO_AXIS_TVALID <= '0';
                         -- normal input into accumulator
                         else
-                            o_Accumulator <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));
-                            MO_AXIS_TDATA <= o_Accumulator;
-                            SD_AXIS_TREADY <= '1';
-                            MO_AXIS_TVALID <= '0';
+                            o_Accumulator <= std_logic_vector(resize(unsigned(i_A) * unsigned(i_B), C_OUTPUT_WIDTH) + unsigned(o_Accumulator));                           
                         end if;
-
+                        MO_AXIS_TDATA <= o_Accumulator; 
+                        MO_AXIS_TVALID <= '0';
                     end if;
                 end if;
 

@@ -1,7 +1,7 @@
 m255
 K4
 z2
-Z0 !s12c _opt1
+Z0 !s12c _opt2
 Z1 !s99 nomlopt
 R0
 R1
@@ -13,31 +13,7 @@ R0
 R1
 R0
 R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-R0
-R1
-Z2 !s12c _opt
+Z2 !s12c _opt1
 R1
 R2
 R1
@@ -46,6 +22,42 @@ R1
 R2
 R1
 R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+Z3 !s12c _opt
+R1
+R3
+R1
+R3
+R1
+R3
+R1
+R3
 R1
 !s11e MIXED_VERSIONS
 13
@@ -54,82 +66,101 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z3 d/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac
+Z4 d/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac
 T_opt
 !i145 1
 !i144 0
 !s110 1789421449
 V7?Z;2om]:fNiS;9T0YoQF2
-Z4 04 10 10 work staged_mac behavioral 1
+Z5 04 10 10 work staged_mac behavioral 1
 =8-005056b6d4c9-6aa86789-21488-6cef
 R1
-Z5 !s12f OEM100
-Z6 !s12b OEM100
-Z7 !s124 OEM100
-Z8 !s135 nogc
+Z6 !s12f OEM100
+Z7 !s12b OEM100
+Z8 !s124 OEM100
+Z9 !s135 nogc
 !i152 0
-Z9 o-quiet -auto_acc_if_foreign -work work
-Z10 tCvgOpt 0
+Z10 o-quiet -auto_acc_if_foreign -work work
+Z11 tCvgOpt 0
 n@_opt
-Z11 OL;O;2026.2;84
-R3
+Z12 OL;O;2026.2;84
+R4
 T_opt1
 !i145 1
 !i144 0
 !s110 1789445824
 VR_D4[>8lS3Z5hzVN2]bol2
-R4
+R5
 =19-005056b651af-6aa8c6bf-b3a8f-a991
 R1
-R5
 R6
 R7
 R8
-!i152 0
 R9
+!i152 0
 R10
-n@_opt1
 R11
+n@_opt1
+R12
+R4
+T_opt2
+!i145 1
+!i144 0
+!s110 1789615134
+Vn>NNIzFY@TnQE@f0B=mV20
+R5
+=6-005056b6b478-6aab5c1d-ea591-5cae
+R1
+R6
+R7
+R8
+R9
+!i152 0
+R10
+R11
+n@_opt2
+R12
+R4
 Estaged_mac
-Z12 w1789445695
-Z13 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
-Z14 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
-Z15 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
-!i122 44
-R3
-Z16 8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
-Z17 F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
+Z13 w1789615424
+Z14 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
+Z15 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
+Z16 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
+!i122 53
+R4
+Z17 8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
+Z18 F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
 l0
 L23 1
 VYEQQOQHD6Ag5hdY7=249Y3
 !s100 MZ5I?R]:_RjGHADCZ>nnc2
-Z18 OL;C;2026.2;84
+Z19 OL;C;2026.2;84
 33
-Z19 !s110 1789445756
+Z20 !s110 1789615434
 !i10b 1
-Z20 !s108 1789445756.000000
-Z21 !s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
-Z22 !s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
+Z21 !s108 1789615434.000000
+Z22 !s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
+Z23 !s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
 !i113 0
-Z23 o-work work
-Z24 tExplicit 1 NoCoverage 1 CvgOpt 0
+Z24 o-work work
+Z25 tExplicit 1 NoCoverage 1 CvgOpt 0
 Abehavioral
-R13
 R14
 R15
-DEx4 work 10 staged_mac 0 22 YEQQOQHD6Ag5hdY7=249Y3
-!i122 44
+R16
+Z26 DEx4 work 10 staged_mac 0 22 YEQQOQHD6Ag5hdY7=249Y3
+!i122 53
 l75
-L56 119
-VEESO:ZIbfd7ODP^<GoLIc0
-!s100 [>33AfXFVjAjmo:TKO5a91
-R18
-33
+Z27 L56 129
+Z28 VDDH^Engdj=`n:Mz82c21d0
+Z29 !s100 =M;X[e@1mP^f`nIbgaN>j1
 R19
-!i10b 1
+33
 R20
+!i10b 1
 R21
 R22
-!i113 0
 R23
+!i113 0
 R24
+R25
