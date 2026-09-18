@@ -1,9 +1,7 @@
 #include <iostream>
 #include "Types.h"
+#include "tests.h"
 
-void run_tests(){
-	// TODO fill this out with software test for your MAC
-}
 
 #ifdef ZEDBOARD
 int main() {
@@ -18,4 +16,5 @@ int main() {
 	return 0;
 }
 #endif
+
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sw_test" location="/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test" platform="/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw_test_platform.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="sw_test_system" sysConfig="sw_test_platform" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" language="CPP" mssSignature="b66a6fd07e3e4fd4d9ac6c209b206867">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1930322985" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.420575746" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
