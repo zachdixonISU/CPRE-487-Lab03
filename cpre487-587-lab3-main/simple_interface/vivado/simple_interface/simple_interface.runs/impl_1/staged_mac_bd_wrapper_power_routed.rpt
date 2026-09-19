@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date             : Thu Sep 17 22:15:06 2026
-| Host             : linuxvdi-f26-39.ece.iastate.edu running 64-bit unknown
+| Date             : Sat Sep 19 17:19:51 2026
+| Host             : co2050-07.ece.iastate.edu running 64-bit unknown
 | Command          : report_power -file staged_mac_bd_wrapper_power_routed.rpt -pb staged_mac_bd_wrapper_power_summary_routed.pb -rpx staged_mac_bd_wrapper_power_routed.rpx
 | Design           : staged_mac_bd_wrapper
 | Device           : xc7z020clg484-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.683        |
+| Total On-Chip Power (W)  | 1.686        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.542        |
+| Dynamic (W)              | 1.544        |
 | Device Static (W)        | 0.142        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.6         |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        3 |       --- |             --- |
-| Slice Logic              |     0.002 |     3172 |       --- |             --- |
-|   LUT as Logic           |     0.002 |      962 |     53200 |            1.81 |
-|   CARRY4                 |    <0.001 |      121 |     13300 |            0.91 |
+| Slice Logic              |     0.003 |     3163 |       --- |             --- |
+|   LUT as Logic           |     0.002 |      934 |     53200 |            1.76 |
+|   CARRY4                 |    <0.001 |      124 |     13300 |            0.93 |
 |   Register               |    <0.001 |     1246 |    106400 |            1.17 |
 |   LUT as Distributed RAM |    <0.001 |      256 |     17400 |            1.47 |
 |   F7/F8 Muxes            |    <0.001 |       23 |     53200 |            0.04 |
 |   LUT as Shift Register  |    <0.001 |       61 |     17400 |            0.35 |
 |   Others                 |     0.000 |      244 |       --- |             --- |
-| Signals                  |     0.003 |     2141 |       --- |             --- |
-| Block RAM                |     0.001 |      3.5 |       140 |            2.50 |
+| Signals                  |     0.004 |     2154 |       --- |             --- |
+| Block RAM                |     0.002 |      3.5 |       140 |            2.50 |
 | PS7                      |     1.529 |        1 |       --- |             --- |
 | Static Power             |     0.142 |          |           |                 |
-| Total                    |     1.683 |          |           |                 |
+| Total                    |     1.686 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.013 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.030 |       0.015 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,16 +151,16 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| staged_mac_bd_wrapper    |     1.542 |
-|   staged_mac_bd_i        |     1.542 |
-|     axi_fifo_mm_s_0      |     0.008 |
-|       U0                 |     0.008 |
+| staged_mac_bd_wrapper    |     1.544 |
+|   staged_mac_bd_i        |     1.544 |
+|     axi_fifo_mm_s_0      |     0.009 |
+|       U0                 |     0.009 |
 |     processing_system7_0 |     1.529 |
 |       inst               |     1.529 |
 |     ps7_0_axi_periph     |     0.004 |
 |       s00_couplers       |     0.004 |
-|     staged_mac_0         |     0.001 |
-|       inst               |     0.001 |
+|     staged_mac_0         |     0.002 |
+|       inst               |     0.002 |
 +--------------------------+-----------+
 
 

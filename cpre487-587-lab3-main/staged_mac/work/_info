@@ -122,12 +122,13 @@ R10
 R11
 n@_opt2
 R12
+R4
 Estaged_mac
-Z13 w1789616163
+Z13 w1789853570
 Z14 DPx4 ieee 11 numeric_std 0 22 m=kP7jRZW]kY;6MU;0z<22
 Z15 DPx3 std 6 textio 0 22 <UlP6K1@RDQa_MJ[:UEnP2
 Z16 DPx4 ieee 14 std_logic_1164 0 22 TDbGXLH=YSoj9JRY2gkNY0
-!i122 54
+!i122 67
 R4
 Z17 8/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
 Z18 F/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd
@@ -137,9 +138,9 @@ VYEQQOQHD6Ag5hdY7=249Y3
 !s100 MZ5I?R]:_RjGHADCZ>nnc2
 Z19 OL;C;2026.2;84
 33
-Z20 !s110 1789616168
+Z20 !s110 1789853575
 !i10b 1
-Z21 !s108 1789616168.000000
+Z21 !s108 1789853575.000000
 Z22 !s90 -reportprogress|300|-work|work|/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
 Z23 !s107 /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/hdl/staged_mac.vhd|
 !i113 0
@@ -149,12 +150,12 @@ Abehavioral
 R14
 R15
 R16
-DEx4 work 10 staged_mac 0 22 YEQQOQHD6Ag5hdY7=249Y3
-!i122 54
-l74
-L56 125
-VFfQN2WZD[UbVN[FO]T8;@1
-!s100 ^FTcW[kX?IRdQZ`]37_IH1
+Z26 DEx4 work 10 staged_mac 0 22 YEQQOQHD6Ag5hdY7=249Y3
+!i122 67
+l77
+L56 160
+Vd]mS^[N@Ilg[hnJnFL=Rh2
+!s100 _b9HnU;z]Dfcz220[021<3
 R19
 33
 R20

@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -94,8 +97,8 @@ set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-48
 set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -12,7 +12,6 @@ source staged_mac_bd_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/remote/Xilinx/2020.1/Vivado/2020.1/data/ip'.
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2353.410 ; gain = 8.012 ; free physical = 6002 ; free virtual = 16244
 Command: synth_design -top staged_mac_bd_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -20,55 +19,55 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24642
+INFO: [Synth 8-7075] Helper process launched with PID 560973
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2387.309 ; gain = 33.844 ; free physical = 5340 ; free virtual = 15580
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2467.863 ; gain = 0.000 ; free physical = 10079 ; free virtual = 33056
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_wrapper' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:308]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_axi_fifo_mm_s_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_axi_fifo_mm_s_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_axi_fifo_mm_s_0_0' (1#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_axi_fifo_mm_s_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_axi_fifo_mm_s_0_0' (1#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_axi_fifo_mm_s_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'staged_mac_bd_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:447]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'staged_mac_bd_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:447]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'staged_mac_bd_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:447]
 WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'staged_mac_bd_axi_fifo_mm_s_0_0' has 32 connections declared, but only 29 given [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:447]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_axis_subset_converter_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_axis_subset_converter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_axis_subset_converter_0_0' (2#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_axis_subset_converter_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_processing_system7_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_processing_system7_0_0' (3#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_axis_subset_converter_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_axis_subset_converter_0_0' (2#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_processing_system7_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_processing_system7_0_0' (3#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_processing_system7_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_ps7_0_axi_periph_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:638]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_JBBDI9' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:12]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_auto_pc_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_auto_pc_0' (4#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_auto_pc_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_auto_pc_0' (4#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'staged_mac_bd_auto_pc_0' is unconnected for instance 'auto_pc' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:247]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'staged_mac_bd_auto_pc_0' is unconnected for instance 'auto_pc' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:247]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'staged_mac_bd_auto_pc_0' has 59 connections declared, but only 57 given [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:247]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_JBBDI9' (5#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_ps7_0_axi_periph_0' (6#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:638]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_rst_ps7_0_100M_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_rst_ps7_0_100M_0' (7#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_rst_ps7_0_100M_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_rst_ps7_0_100M_0' (7#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'staged_mac_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:615]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'staged_mac_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:615]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'staged_mac_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:615]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'staged_mac_bd_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:615]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'staged_mac_bd_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:615]
-INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_staged_mac_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_staged_mac_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_staged_mac_0_0' (8#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-24554-linuxvdi-f26-39.ece.iastate.edu/realtime/staged_mac_bd_staged_mac_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'staged_mac_bd_staged_mac_0_0' [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_staged_mac_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_staged_mac_0_0' (8#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/.Xil/Vivado-560856-co2050-07.ece.iastate.edu/realtime/staged_mac_bd_staged_mac_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd' (9#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v:308]
 INFO: [Synth 8-6155] done synthesizing module 'staged_mac_bd_wrapper' (10#1) [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2431.215 ; gain = 77.750 ; free physical = 5324 ; free virtual = 15565
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2467.863 ; gain = 0.000 ; free physical = 10027 ; free virtual = 33005
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2446.059 ; gain = 92.594 ; free physical = 5309 ; free virtual = 15552
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2470.477 ; gain = 2.613 ; free physical = 10043 ; free virtual = 33020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2446.059 ; gain = 92.594 ; free physical = 5309 ; free virtual = 15552
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2470.477 ; gain = 2.613 ; free physical = 10043 ; free virtual = 33020
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2446.059 ; gain = 0.000 ; free physical = 5303 ; free virtual = 15546
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2470.477 ; gain = 0.000 ; free physical = 10043 ; free virtual = 33020
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -80,12 +79,12 @@ WARNING: [Vivado 12-584] No ports matched ''. [/home/zachdixo/cpre-487/lab03/CPR
 Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_processing_system7_0_0/staged_mac_bd_processing_system7_0_0/staged_mac_bd_processing_system7_0_0_in_context.xdc] for cell 'staged_mac_bd_i/processing_system7_0'
 Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0_in_context.xdc] for cell 'staged_mac_bd_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0_in_context.xdc] for cell 'staged_mac_bd_i/rst_ps7_0_100M'
-Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_in_context.xdc] for cell 'staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_in_context.xdc] for cell 'staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_staged_mac_0_0/staged_mac_bd_staged_mac_0_0/staged_mac_bd_staged_mac_0_0_in_context.xdc] for cell 'staged_mac_bd_i/staged_mac_0'
 Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_staged_mac_0_0/staged_mac_bd_staged_mac_0_0/staged_mac_bd_staged_mac_0_0_in_context.xdc] for cell 'staged_mac_bd_i/staged_mac_0'
 Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0_in_context.xdc] for cell 'staged_mac_bd_i/axis_subset_converter_0'
 Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0_in_context.xdc] for cell 'staged_mac_bd_i/axis_subset_converter_0'
+Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_in_context.xdc] for cell 'staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_in_context.xdc] for cell 'staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/constrs_1/imports/hdl/zedboard.xdc]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/constrs_1/imports/hdl/zedboard.xdc:361]
 WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/constrs_1/imports/hdl/zedboard.xdc:366]
@@ -100,20 +99,20 @@ Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-
 Finished Parsing XDC File [/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2503.789 ; gain = 0.000 ; free physical = 5198 ; free virtual = 15442
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.242 ; gain = 0.000 ; free physical = 9942 ; free virtual = 32919
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2503.789 ; gain = 0.000 ; free physical = 5199 ; free virtual = 15442
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2534.242 ; gain = 0.000 ; free physical = 9942 ; free virtual = 32919
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2503.789 ; gain = 150.324 ; free physical = 5301 ; free virtual = 15544
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 10030 ; free virtual = 33007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2503.789 ; gain = 150.324 ; free physical = 5301 ; free virtual = 15544
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 10030 ; free virtual = 33007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -383,14 +382,14 @@ Applied set_property DONT_TOUCH = true for staged_mac_bd_i/axi_fifo_mm_s_0. (con
 Applied set_property DONT_TOUCH = true for staged_mac_bd_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for staged_mac_bd_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for staged_mac_bd_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for staged_mac_bd_i/staged_mac_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for staged_mac_bd_i/axis_subset_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for staged_mac_bd_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2503.789 ; gain = 150.324 ; free physical = 5300 ; free virtual = 15543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 10029 ; free virtual = 33007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2503.789 ; gain = 150.324 ; free physical = 5309 ; free virtual = 15553
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 10036 ; free virtual = 33014
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -412,25 +411,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2503.789 ; gain = 150.324 ; free physical = 5316 ; free virtual = 15564
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 10037 ; free virtual = 33018
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2518.789 ; gain = 165.324 ; free physical = 5199 ; free virtual = 15446
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 9921 ; free virtual = 32900
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2518.789 ; gain = 165.324 ; free physical = 5199 ; free virtual = 15446
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2534.242 ; gain = 66.379 ; free physical = 9921 ; free virtual = 32900
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 2538.828 ; gain = 185.363 ; free physical = 5181 ; free virtual = 15429
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2538.258 ; gain = 70.395 ; free physical = 9901 ; free virtual = 32880
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -448,37 +447,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -508,23 +507,25 @@ Report Cell Usage:
 |6     |staged_mac_bd_staged_mac_0            |     1|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.766 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15433
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.195 ; gain = 76.332 ; free physical = 9894 ; free virtual = 32877
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2544.766 ; gain = 133.570 ; free physical = 5186 ; free virtual = 15433
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2544.773 ; gain = 191.301 ; free physical = 5186 ; free virtual = 15434
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2544.195 ; gain = 12.566 ; free physical = 9904 ; free virtual = 32887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2544.203 ; gain = 76.332 ; free physical = 9904 ; free virtual = 32887
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2544.773 ; gain = 0.000 ; free physical = 5267 ; free virtual = 15514
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2544.203 ; gain = 0.000 ; free physical = 9990 ; free virtual = 32973
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2552.703 ; gain = 0.000 ; free physical = 5214 ; free virtual = 15462
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2552.133 ; gain = 0.000 ; free physical = 9930 ; free virtual = 32913
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 36 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2559.641 ; gain = 206.230 ; free physical = 5213 ; free virtual = 15460
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 2559.070 ; gain = 91.207 ; free physical = 9958 ; free virtual = 32940
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint '/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/staged_mac_bd_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file staged_mac_bd_wrapper_utilization_synth.rpt -pb staged_mac_bd_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 17 22:13:42 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 19 17:13:51 2026...

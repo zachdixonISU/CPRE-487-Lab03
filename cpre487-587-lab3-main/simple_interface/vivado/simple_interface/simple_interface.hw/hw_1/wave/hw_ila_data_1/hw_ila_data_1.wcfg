@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="51fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="370"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : Interface</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : T Channel</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
+            <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TVALID</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
+            <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TREADY</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
+            <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TLAST</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid[7:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tid[7:0]</obj_property>
+            <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TID</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata[15:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tdata[15:0]</obj_property>
+            <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TDATA</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">net_slot_0_axis_tdata[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">slot_0 : axis_subset_converter_0_M_AXIS : TDATA</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

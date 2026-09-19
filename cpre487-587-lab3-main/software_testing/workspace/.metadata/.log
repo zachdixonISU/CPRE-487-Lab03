@@ -1,21 +1,21 @@
-!SESSION 2026-09-17 23:39:12.578 -----------------------------------------------
+!SESSION 2026-09-19 16:39:14.115 -----------------------------------------------
 eclipse.buildId=2020.1
 java.version=9.0.4
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
-Framework arguments:  -application com.xilinx.sdx.cmdline.service 45341
-Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 45341 -data /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 45839
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 45839 -data /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:17.918
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:16.011
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.350
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:17.987
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.365
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:17.989
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.375
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:17.995
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Result: [null, {"axi_fifo_mm_s_0": {"hier_name": "axi_fifo_mm_s_0",
 "type": "axi_fifo_mm_s",
 "version": "4.2",
@@ -45,6 +45,11 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "type": "staged_mac",
 "version": "1.0",
 "ip_type": "PERIPHERAL",
+},
+"system_ila_0": {"hier_name": "system_ila_0",
+"type": "system_ila",
+"version": "1.1",
+"ip_type": "MONITOR",
 },
 "ps7_clockc_0": {"hier_name": "ps7_clockc_0",
 "type": "ps7_clockc",
@@ -231,24 +236,34 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "version": "1.00.a",
 "ip_type": "PERIPHERAL",
 },
+"system_ila_0_g_inst": {"hier_name": "system_ila_0/system_ila_0_g_inst",
+"type": "gigantic_mux",
+"version": "1.0",
+"ip_type": "MONITOR",
+},
+"system_ila_0_ila_lib": {"hier_name": "system_ila_0/system_ila_0_ila_lib",
+"type": "ila",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.389
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.000
 !MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.573
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.038
 !MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.576
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.039
 !MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.580
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.040
 !MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /remote/Xilinx/2020.1/Vitis/2020.1/data]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.588
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.043
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.598
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.048
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_6": {"name": "freertos10_xilinx",
 "version": "1.6",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.3.0",
@@ -281,67 +296,70 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.760
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.103
 !MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode batch], Thread: Thread-17
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:26.763
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.104
 !MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode batch], Result: [null, ]. Thread: Thread-17
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:27.266
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:18.263
 !MESSAGE XSCT Command: [platform create -name {sw_test_platform} -hw {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa} -arch {32-bit} -out {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace};platform write], Thread: Thread-10
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-17 23:39:27.375
-!MESSAGE Indexed 'sw_test_platform' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-19 16:39:18.399
+!MESSAGE Indexed 'sw_test_platform' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:39.778
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:25.283
 !MESSAGE XSCT command with result: [platform create -name {sw_test_platform} -hw {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/hw/sw_test_platform.xsa} -arch {32-bit} -out {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace};platform write], Result: [null, Successfully saved  the platform at "/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/platform.spr"]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:40.047
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:25.380
 !MESSAGE XSCT Command: [domain create -name {standalone_domain} -display-name {standalone on ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {empty_application}], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:44.837
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.497
 !MESSAGE XSCT command with result: [domain create -name {standalone_domain} -display-name {standalone on ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {empty_application}], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:44.840
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.498
 !MESSAGE XSCT Command: [platform write], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.075
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.559
 !MESSAGE XSCT command with result: [platform write], Result: [null, Successfully saved  the platform at "/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/platform.spr"]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.118
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.571
 !MESSAGE XSCT Command: [platform active {sw_test_platform}], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.121
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.572
 !MESSAGE XSCT command with result: [platform active {sw_test_platform}], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.124
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.573
 !MESSAGE XSCT Command: [domain active {zynq_fsbl}], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.127
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.574
 !MESSAGE XSCT command with result: [domain active {zynq_fsbl}], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.130
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.575
 !MESSAGE XSCT Command: [domain active {standalone_domain}], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.134
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.576
 !MESSAGE XSCT command with result: [domain active {standalone_domain}], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.136
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.576
 !MESSAGE XSCT Command: [platform generate -quick], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:45.615
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:26.695
 !MESSAGE XSCT command with result: [platform generate -quick], Result: [null, Successfully generated platform at "/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace"]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:46.848
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:27.081
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.361
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-19 16:39:27.933
+!MESSAGE Indexed 'sw_test_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.384
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.365
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.385
 !MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.375
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.391
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, {"axi_fifo_mm_s_0": {"hier_name": "axi_fifo_mm_s_0",
 "type": "axi_fifo_mm_s",
 "version": "4.2",
@@ -371,6 +389,11 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "type": "staged_mac",
 "version": "1.0",
 "ip_type": "PERIPHERAL",
+},
+"system_ila_0": {"hier_name": "system_ila_0",
+"type": "system_ila",
+"version": "1.1",
+"ip_type": "MONITOR",
 },
 "ps7_clockc_0": {"hier_name": "ps7_clockc_0",
 "type": "ps7_clockc",
@@ -557,27 +580,37 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "version": "1.00.a",
 "ip_type": "PERIPHERAL",
 },
+"system_ila_0_g_inst": {"hier_name": "system_ila_0/system_ila_0_g_inst",
+"type": "gigantic_mux",
+"version": "1.0",
+"ip_type": "MONITOR",
+},
+"system_ila_0_ila_lib": {"hier_name": "system_ila_0/system_ila_0_ila_lib",
+"type": "ila",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.424
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.404
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss ], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.431
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.406
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss ], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.435
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.407
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:48.439
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.409
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.2",
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.476
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.827
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.490
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.833
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_6": {"name": "freertos10_xilinx",
 "version": "1.6",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.3.0",
@@ -610,28 +643,28 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.494
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.834
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.497
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.835
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.500
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.836
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.505
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.837
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, {}]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.511
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.838
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.520
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.839
 !MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Result: [null, axi_fifo_mm_s_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.526
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.840
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.536
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.843
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, {"axi_fifo_mm_s_0": {"name": "llfifo",
 "ver": "5.4",
 },
@@ -736,13 +769,10 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 }]. Thread: Thread-10
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-17 23:39:49.543
-!MESSAGE Indexed 'sw_test_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.549
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.844
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.641
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.899
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, {"axi_fifo_mm_s_0": {"version": "4.2",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0 2.1",
@@ -785,6 +815,13 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 },
 "staged_mac_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0 2.1",
+"repo": "/remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0 /remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_1",
+},
+},
+},
+"system_ila_0": {"version": "1.1",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0 2.1",
 "repo": "/remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0 /remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_1",
@@ -1146,121 +1183,135 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 },
 },
 },
+"system_ila_0_g_inst": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0 2.1",
+"repo": "/remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0 /remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_1",
+},
+},
+},
+"system_ila_0_ila_lib": {"version": "6.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0 2.1",
+"repo": "/remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0 /remote/Xilinx/2020.1/Vitis/2020.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_1",
+},
+},
+},
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.648
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.902
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.653
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.903
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.658
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.904
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.667
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.905
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, {}]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.706
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.923
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.711
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.925
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.715
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.926
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.719
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.927
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.724
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.928
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa -sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/src], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.792
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.955
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa -sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/src], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:49.984
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:28.986
 !MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/_ide/bitstream}], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:50.050
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:29.032
 !MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/_ide/bitstream}], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:50.056
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:29.034
 !MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:50.061
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:29.035
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, {"device": "7z020",
 "family": "zynq",
-"timestamp": "Thu Sep 17 22:10:33 2026",
+"timestamp": "Sat Sep 19 16:33:55 2026",
 "vivado_version": "2020.1",
 "part": "xc7z020clg484-1",
 }]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:50.065
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:29.037
 !MESSAGE XSCT Command: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/_ide/psinit} -quiet], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:53.999
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:31.075
 !MESSAGE XSCT command with result: [::hsi::generate_target {psinit} [ ::hsi::get_cells -filter { CONFIGURABLE == true } -hierarchical] -dir {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/_ide/psinit} -quiet], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:54.167
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:31.161
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:39:54.171
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:39:31.163
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test/system.mss], Result: [null, ]. Thread: Thread-10
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-17 23:39:54.204
+!ENTRY com.xilinx.sdk.utils 1 0 2026-09-19 16:39:31.180
 !MESSAGE Generating MD5 hash for file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ...
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-09-17 23:39:55.044
+!ENTRY org.eclipse.cdt.core 1 0 2026-09-19 16:39:31.681
 !MESSAGE Indexed 'sw_test' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:57.391
-!MESSAGE XSCT Command: [::hsi::utils::closehw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:00.803
+!MESSAGE XSCT Command: [::hsi::utils::closehw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:57.413
-!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:00.816
+!MESSAGE XSCT command with result: [::hsi::utils::closehw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:57.416
-!MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:00.817
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.898
-!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.098
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.901
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.100
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.910
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.103
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.914
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.104
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.919
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.105
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.2",
-}]. Thread: Worker-0: Building selected projects in workspace
+}]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 1 0 2026-09-17 23:40:58.923
+!ENTRY com.xilinx.sdk.utils 1 0 2026-09-19 16:40:02.106
 !MESSAGE Generating MD5 hash for file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ...
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.930
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.108
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.933
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, xilffs lwip211]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.110
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, xilffs lwip211]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.937
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.110
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.940
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.112
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, {"xilffs": "4.3",
 "lwip211": "1.2",
-}]. Thread: Worker-0: Building selected projects in workspace
+}]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.943
-!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.113
+!MESSAGE XSCT Command: [hsi::utils::get_all_libs -json], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.953
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.117
 !MESSAGE XSCT command with result: [hsi::utils::get_all_libs -json], Result: [null, {"libmetal_v2_1": {"name": "libmetal",
 "version": "2.1",
 "desc": "Libmetal Library",
@@ -1423,18 +1474,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "os": "standalone freertos10_xilinx",
 "proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 psv_cortexr5 psu_pmu microblaze psu_cortexa72 psv_cortexa72",
 },
-}]. Thread: Worker-0: Building selected projects in workspace
+}]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.959
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.118
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.963
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Result: [null, axi_fifo_mm_s_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.120
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa ps7_cortexa9_0], Result: [null, axi_fifo_mm_s_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.967
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.121
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.973
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.123
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, {"axi_fifo_mm_s_0": {"name": "llfifo",
 "ver": "5.4",
 },
@@ -1537,19 +1588,84 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.
 "ps7_cortexa9_0": {"name": "cpu_cortexa9",
 "ver": "2.9",
 },
-}]. Thread: Worker-0: Building selected projects in workspace
+}]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.976
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.124
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:58.980
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, xilffs lwip211]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.125
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, xilffs lwip211]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:59.061
-!MESSAGE XSCT Command: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.154
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY com.xilinx.sdk.utils 0 0 2026-09-17 23:40:59.065
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-0: Building selected projects in workspace
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:02.156
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-1: Building selected projects in workspace
 
-!ENTRY org.eclipse.core.resources 2 10035 2026-09-17 23:41:03.214
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-19 16:40:04.463
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-09-19 16:40:28.065 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 38505
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 38505 -data /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-19 16:40:28.646
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:29.966
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode batch], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:29.968
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode batch], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:43.480
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.700
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.704
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.707
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.708
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/hw/sw_test_platform.xsa /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.2",
+}]. Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-09-19 16:40:44.711
+!MESSAGE Generating MD5 hash for file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.714
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 16:40:44.716
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace/sw_test_platform/export/sw_test_platform/sw/sw_test_platform/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-3: Building selected projects in workspace
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-19 16:40:46.611
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2026-09-19 17:07:28.853 -----------------------------------------------
+eclipse.buildId=2020.1
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application com.xilinx.sdx.cmdline.service 39017
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdx.cmdline.service 39017 -data /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/software_testing/workspace
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-09-19 17:07:29.815
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 17:07:31.401
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode batch], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-09-19 17:07:31.403
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode batch], Result: [null, ]. Thread: Thread-11

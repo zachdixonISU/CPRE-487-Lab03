@@ -2,21 +2,189 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Mon Sep 14 23:29:20 2026
-# Process ID: 65931
+# Start of session at: Sat Sep 19 13:42:44 2026
+# Process ID: 10494
 # Current directory: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado
 # Command line: vivado
 # Log file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/vivado.log
 # Journal file: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/staged_mac/vivado/tc_staged_mac/tc_staged_mac.xpr
+open_project /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-source staged_mac.tcl
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
 reset_run synth_1
-launch_runs synth_1 -jobs 2
+update_module_reference staged_mac_bd_staged_mac_0_0
+launch_runs synth_1 -jobs 4
 wait_on_run synth_1
-launch_runs impl_1 -jobs 2
+launch_runs impl_1 -jobs 4
 wait_on_run impl_1
+open_run impl_1
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axis_subset_converter_0_M_AXIS}]
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata} }
+set_property NAME.CUSTOM {slot_0 : axis_subset_converter_0_M_AXIS : TDATA} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata] 
+set_property TRIGGER_COMPARE_VALUE eq16'bXXXX_XXXX_XXXX_XXXX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'b1XXX_XXXX_XXXX_XXXX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'bXXXX_XXXX_XXXX_XXX1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'hXXXX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq16'h0001 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+save_wave_config {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210248A49A84}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE eq16'h0003 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE eq16'h0304 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_module_reference staged_mac_bd_staged_mac_0_0
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_module_reference staged_mac_bd_staged_mac_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+save_bd_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+reset_run staged_mac_bd_staged_mac_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+save_wave_config {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+disconnect_hw_server localhost:3121
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+refresh_design
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+reset_run staged_mac_bd_staged_mac_0_0_synth_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+update_module_reference staged_mac_bd_staged_mac_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]
+write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa
+report_utilization -name utilization_1
+refresh_hw_target {localhost:3121/xilinx_tcf/Digilent/210248A49A84}
+open_run synth_1 -name synth_1
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_0_M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins staged_mac_0/SD_AXIS] [get_bd_intf_pins axis_subset_converter_0/M_AXIS]
+undo
+validate_bd_design
+connect_bd_intf_net [get_bd_intf_pins axis_subset_converter_0/M_AXIS] [get_bd_intf_pins staged_mac_0/SD_AXIS]
+validate_bd_design
+undo
+undo
+delete_bd_objs [get_bd_cells system_ila_0]
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+delete_bd_objs [get_bd_cells system_ila_0]
+validate_bd_design
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axis_subset_converter_0_M_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+delete_bd_objs [get_bd_cells system_ila_0]
+validate_bd_design
+generate_target all [get_files  /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+catch { config_ip_cache -export [get_ips -all staged_mac_bd_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd]
+export_simulation -of_objects [get_files /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] -directory /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.ip_user_files/sim_scripts -ip_user_files_dir /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.ip_user_files -ipstatic_source_dir /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/modelsim} {questa=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/questa} {ies=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/ies} {xcelium=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/xcelium} {vcs=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/vcs} {riviera=/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}
+delete_bd_objs [get_bd_intf_nets axis_subset_converter_0_M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins staged_mac_0/SD_AXIS] [get_bd_intf_pins axis_subset_converter_0/M_AXIS]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
 open_run impl_1

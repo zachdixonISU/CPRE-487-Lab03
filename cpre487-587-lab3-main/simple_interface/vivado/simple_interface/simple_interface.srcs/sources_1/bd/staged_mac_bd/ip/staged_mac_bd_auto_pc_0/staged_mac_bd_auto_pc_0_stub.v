@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
 // Date        : Thu Sep 17 22:12:15 2026
 // Host        : linuxvdi-f26-39.ece.iastate.edu running 64-bit unknown
-// Command     : write_verilog -force -mode synth_stub
-//               /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top staged_mac_bd_auto_pc_0 -prefix
+//               staged_mac_bd_auto_pc_0_ staged_mac_bd_auto_pc_0_stub.v
 // Design      : staged_mac_bd_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

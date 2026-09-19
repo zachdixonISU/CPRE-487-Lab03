@@ -121,41 +121,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg484-1
-  set_property board_part digilentinc.com:zedboard:part0:1.0 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  set_param chipscope.maxJobs 3
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param xicom.use_bs_reader 1
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.dcp
   set_property webtalk.parent_dir /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/wt [current_project]
   set_property parent.project_path /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr [current_project]
   set_property ip_output_repo /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/staged_mac_bd_wrapper.dcp
-  set_msg_config -source 4 -id {BD 41-1661} -limit 0
-  set_param project.isImplRun true
-  add_files /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd
-  set_param project.isImplRun false
-OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/constrs_1/imports/hdl/zedboard.xdc
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  set_param project.isImplRun true
-  link_design -top staged_mac_bd_wrapper -part xc7z020clg484-1
-OPTRACE "link_design" END { }
-  set_param project.isImplRun false
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
-  write_hwdef -force -file staged_mac_bd_wrapper.hwdef
 OPTRACE "init_design_write_hwdef" END { }
   close_msg_db -file init_design.pb
 } RESULT]
@@ -302,35 +280,4 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  catch { write_mem_info -force staged_mac_bd_wrapper.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force staged_mac_bd_wrapper.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force staged_mac_bd_wrapper}
-  catch {file copy -force staged_mac_bd_wrapper.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "Implementation" END { }

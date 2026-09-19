@@ -18,13 +18,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_p
 # IP: bd/staged_mac_bd/ip/staged_mac_bd_rst_ps7_0_100M_0/staged_mac_bd_rst_ps7_0_100M_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_rst_ps7_0_100M_0 || ORIG_REF_NAME==staged_mac_bd_rst_ps7_0_100M_0} -quiet] -quiet
 
-# IP: bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_auto_pc_0 || ORIG_REF_NAME==staged_mac_bd_auto_pc_0} -quiet] -quiet
-
 # IP: bd/staged_mac_bd/ip/staged_mac_bd_staged_mac_0_0/staged_mac_bd_staged_mac_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_staged_mac_0_0 || ORIG_REF_NAME==staged_mac_bd_staged_mac_0_0} -quiet] -quiet
 
 # IP: bd/staged_mac_bd/ip/staged_mac_bd_axis_subset_converter_0_0/staged_mac_bd_axis_subset_converter_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_axis_subset_converter_0_0 || ORIG_REF_NAME==staged_mac_bd_axis_subset_converter_0_0} -quiet] -quiet
+
+# IP: bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_auto_pc_0 || ORIG_REF_NAME==staged_mac_bd_auto_pc_0} -quiet] -quiet
 
 # XDC: bd/staged_mac_bd/staged_mac_bd_ooc.xdc
