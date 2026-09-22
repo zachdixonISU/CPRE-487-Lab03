@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date                      : Sat Sep 19 17:19:37 2026
-| Host                      : co2050-07.ece.iastate.edu running 64-bit unknown
+| Date                      : Tue Sep 22 17:30:56 2026
+| Host                      : xilinx-1.ece.iastate.edu running 64-bit unknown
 | Command                   : report_io -file staged_mac_bd_wrapper_io_placed.rpt
 | Design                    : staged_mac_bd_wrapper
 | Device                    : xc7z020

@@ -1,8 +1,8 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-//Date        : Sat Sep 19 17:01:55 2026
-//Host        : co2050-07.ece.iastate.edu running 64-bit unknown
+//Date        : Tue Sep 22 17:27:21 2026
+//Host        : xilinx-1.ece.iastate.edu running 64-bit unknown
 //Command     : generate_target staged_mac_bd.bd
 //Design      : staged_mac_bd
 //Purpose     : IP block netlist
@@ -304,7 +304,7 @@ module s00_couplers_imp_JBBDI9
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "staged_mac_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=staged_mac_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "staged_mac_bd.hwdef" *) 
+(* CORE_GENERATION_INFO = "staged_mac_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=staged_mac_bd,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_clkrst_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "staged_mac_bd.hwdef" *) 
 module staged_mac_bd
    (DDR_addr,
     DDR_ba,
@@ -354,11 +354,11 @@ module staged_mac_bd
   wire axi_fifo_mm_s_0_AXI_STR_TXD_TLAST;
   wire axi_fifo_mm_s_0_AXI_STR_TXD_TREADY;
   wire axi_fifo_mm_s_0_AXI_STR_TXD_TVALID;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [15:0]axis_subset_converter_0_M_AXIS_TDATA;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]axis_subset_converter_0_M_AXIS_TID;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_subset_converter_0_M_AXIS_TLAST;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_subset_converter_0_M_AXIS_TREADY;
-  (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_subset_converter_0_M_AXIS_TVALID;
+  wire [15:0]axis_subset_converter_0_M_AXIS_TDATA;
+  wire [7:0]axis_subset_converter_0_M_AXIS_TID;
+  wire axis_subset_converter_0_M_AXIS_TLAST;
+  wire axis_subset_converter_0_M_AXIS_TREADY;
+  wire axis_subset_converter_0_M_AXIS_TVALID;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -438,11 +438,11 @@ module staged_mac_bd
   wire [3:0]ps7_0_axi_periph_M00_AXI_WSTRB;
   wire ps7_0_axi_periph_M00_AXI_WVALID;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
-  wire [31:0]staged_mac_0_MO_AXIS_TDATA;
-  wire [7:0]staged_mac_0_MO_AXIS_TID;
-  wire staged_mac_0_MO_AXIS_TLAST;
-  wire staged_mac_0_MO_AXIS_TREADY;
-  wire staged_mac_0_MO_AXIS_TVALID;
+  (* CONN_BUS_INFO = "staged_mac_0_MO_AXIS xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]staged_mac_0_MO_AXIS_TDATA;
+  (* CONN_BUS_INFO = "staged_mac_0_MO_AXIS xilinx.com:interface:axis:1.0 None TID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]staged_mac_0_MO_AXIS_TID;
+  (* CONN_BUS_INFO = "staged_mac_0_MO_AXIS xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire staged_mac_0_MO_AXIS_TLAST;
+  (* CONN_BUS_INFO = "staged_mac_0_MO_AXIS xilinx.com:interface:axis:1.0 None TREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire staged_mac_0_MO_AXIS_TREADY;
+  (* CONN_BUS_INFO = "staged_mac_0_MO_AXIS xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire staged_mac_0_MO_AXIS_TVALID;
 
   staged_mac_bd_axi_fifo_mm_s_0_0 axi_fifo_mm_s_0
        (.axi_str_rxd_tdata(staged_mac_0_MO_AXIS_TDATA),
@@ -633,6 +633,14 @@ module staged_mac_bd
         .SD_AXIS_TREADY(axis_subset_converter_0_M_AXIS_TREADY),
         .SD_AXIS_TUSER(1'b0),
         .SD_AXIS_TVALID(axis_subset_converter_0_M_AXIS_TVALID));
+  staged_mac_bd_system_ila_0_0 system_ila_0
+       (.SLOT_0_AXIS_tdata(staged_mac_0_MO_AXIS_TDATA),
+        .SLOT_0_AXIS_tid(staged_mac_0_MO_AXIS_TID),
+        .SLOT_0_AXIS_tlast(staged_mac_0_MO_AXIS_TLAST),
+        .SLOT_0_AXIS_tready(staged_mac_0_MO_AXIS_TREADY),
+        .SLOT_0_AXIS_tvalid(staged_mac_0_MO_AXIS_TVALID),
+        .clk(processing_system7_0_FCLK_CLK0),
+        .resetn(rst_ps7_0_100M_peripheral_aresetn));
 endmodule
 
 module staged_mac_bd_ps7_0_axi_periph_0

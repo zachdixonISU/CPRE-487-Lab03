@@ -27,4 +27,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_a
 # IP: bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/staged_mac_bd_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_auto_pc_0 || ORIG_REF_NAME==staged_mac_bd_auto_pc_0} -quiet] -quiet
 
+# IP: bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/staged_mac_bd_system_ila_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==staged_mac_bd_system_ila_0_0 || ORIG_REF_NAME==staged_mac_bd_system_ila_0_0} -quiet] -quiet
+
 # XDC: bd/staged_mac_bd/staged_mac_bd_ooc.xdc

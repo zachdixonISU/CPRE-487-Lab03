@@ -102,6 +102,16 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/staged_mac_bd/ip/staged_mac_bd_auto_pc_0/sim/staged_mac_bd_auto_pc_0.v" \
+  "../../../bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_0/sim/bd_8f44_ila_lib_0.v" \
+-endlib
+-makelib xcelium_lib/gigantic_mux \
+  "../../../../simple_interface.srcs/sources_1/bd/staged_mac_bd/ipshared/d322/hdl/gigantic_mux_v1_0_cntr.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/bd_8f44_g_inst_0_gigantic_mux.v" \
+  "../../../bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/ip/ip_1/sim/bd_8f44_g_inst_0.v" \
+  "../../../bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/bd_0/sim/bd_8f44.v" \
+  "../../../bd/staged_mac_bd/ip/staged_mac_bd_system_ila_0_0/sim/staged_mac_bd_system_ila_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

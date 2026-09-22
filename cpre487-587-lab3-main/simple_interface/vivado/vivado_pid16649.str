@@ -1,0 +1,1143 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:35 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 16649
+License: Customer
+
+Current time: 	Tue Sep 22 17:21:30 CDT 2026
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: AlmaLinux release 9.8 (Olive Jaguar)
+OS Version: 5.14.0-687.39.1.el9_8.x86_64
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: localhost:10.0
+Screen size: 2560x1600
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/remote/Xilinx/2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4
+Java executable location: 	/remote/Xilinx/2020.1/Vivado/2020.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	zachdixo
+User home directory: /home/zachdixo
+User working directory: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /remote/Xilinx/2020.1/Vivado
+HDI_APPROOT: /remote/Xilinx/2020.1/Vivado/2020.1
+RDI_DATADIR: /remote/Xilinx/2020.1/Vivado/2020.1/data
+RDI_BINDIR: /remote/Xilinx/2020.1/Vivado/2020.1/bin
+
+Vivado preferences file location: /home/zachdixo/.Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: /home/zachdixo/.Xilinx/Vivado/2020.1/
+Vivado layouts directory: /home/zachdixo/.Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	/remote/Xilinx/2020.1/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/vivado.log
+Vivado journal file location: 	/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-16649-xilinx-1.ece.iastate.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /remote/Xilinx/2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: /remote/Xilinx/2020.1/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: /remote/Xilinx/2020.1/Vivado/2020.1
+XILINX_SDK: /remote/Xilinx/2020.1/Vitis/2020.1
+XILINX_VITIS: /remote/Xilinx/2020.1/Vitis/2020.1
+XILINX_VIVADO: /remote/Xilinx/2020.1/Vivado/2020.1
+XILINX_VIVADO_HLS: /remote/Xilinx/2020.1/Vivado/2020.1
+
+
+GUI allocated memory:	153 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,442 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr", 0); // r (J, cs)
+// [GUI Memory]: 129 MB (+133291kb) [00:00:10]
+// [Engine Memory]: 1,443 MB (+1361541kb) [00:00:10]
+// Opening Vivado Project: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr. Version: Vivado v2020.1 
+// bz (cs):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1419 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,454 MB. GUI used memory: 73 MB. Current time: 9/22/26, 5:21:32 PM CDT
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3215 ms.
+// Tcl Message: open_project /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/remote/Xilinx/2020.1/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7326.418 ; gain = 22.238 ; free physical = 26252 ; free virtual = 45312 
+// Project name: simple_interface; location: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface; part: xc7z020clg484-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bz (cs)
+// [GUI Memory]: 139 MB (+3207kb) [00:00:21]
+// [Engine Memory]: 1,542 MB (+28258kb) [00:00:21]
+// [Engine Memory]: 1,726 MB (+112289kb) [00:00:23]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cs):  Open Hardware Manager : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1340 ms.
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bz (cs)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// bz (cs):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2020.1.0   **** Build date : May 13 2020-20:10:29     ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// HMemoryUtils.trashcanNow. Engine heap size: 1,672 MB. GUI used memory: 81 MB. Current time: 9/22/26, 5:21:51 PM CDT
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248B9DAE0 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1153 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.bit} [get_hw_devices xc7z020_1] 
+// CommandFailedException: ERROR: [Common 17-48] File not found: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/staged_mac_bd_wrapper.ltx 
+// [Engine Memory]: 2,491 MB (+710952kb) [00:00:33]
+dismissDialog("Auto Connect"); // bz (cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 35 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (ds, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// HMemoryUtils.trashcanNow. Engine heap size: 2,549 MB. GUI used memory: 80 MB. Current time: 9/22/26, 5:22:36 PM CDT
+// 'cD' command handler elapsed time: 4 seconds
+selectButton("OptionPane.button", "Cancel"); // JButton (v, B)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cs):  Open Block Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1336 ms.
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_fifo_mm_s:4.2 - axi_fifo_mm_s_0 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0 Adding component instance block -- xilinx.com:module_ref:staged_mac:1.0 - staged_mac_0 Successfully read diagram <staged_mac_bd> from BD file </home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// [Engine Memory]: 2,623 MB (+8297kb) [00:01:39]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// 'bJ' command handler elapsed time: 5 seconds
+dismissDialog("Open Block Design"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,625 MB. GUI used memory: 83 MB. Current time: 9/22/26, 5:23:01 PM CDT
+// Elapsed time: 30 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 947, 306, 1174, 555, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+// Elapsed time: 75 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 367, 108, 1174, 555, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Interface Connection Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 419, 113, 1174, 555, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // af (ao, cs)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_DEBUG, "Debug"); // ai (ao, cs)
+// Tcl Command: 'set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {staged_mac_0_MO_AXIS}]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// bz (cs):  Debug : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1120 ms.
+// Tcl Message: set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {staged_mac_0_MO_AXIS}] 
+// Tcl Message: true 
+dismissDialog("Debug"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,702 MB. GUI used memory: 85 MB. Current time: 9/22/26, 5:25:01 PM CDT
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (dq, cs)
+// ai (cs): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ai)
+dismissDialog("Run Connection Automation"); // ai (cs)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// bz (cs):  Run Connection Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \                                                           [get_bd_intf_nets staged_mac_0_MO_AXIS] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/processing_system7_0/FCLK_CLK0" SYSTEM_ILA "Auto" APC_EN "0" } \                                                          ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Debug Automation : Instantiating new System ILA block '/system_ila_0' with mode INTERFACE, 1 slot interface pins and 0 probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation. Debug Automation : Connecting source clock pin /processing_system7_0/FCLK_CLK0 to the following sink clock pins : /system_ila_0/clk Debug Automation : Connecting source reset pin /rst_ps7_0_100M/peripheral_aresetn to the following sink reset pins : /system_ila_0/resetn Debug Automation : Connecting interface connection /staged_mac_0_MO_AXIS, to System ILA slot interface pin /system_ila_0/SLOT_0_AXIS for debug. 
+dismissDialog("Run Connection Automation"); // bz (cs)
+// Elapsed time: 51 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 986, 147, 1174, 555, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // af (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design'
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cs):  Validate Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// [Engine Memory]: 2,792 MB (+39248kb) [00:05:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1263 ms.
+// Elapsed time: 26 seconds
+dismissDialog("Validate Design"); // bz (cs)
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,800 MB. GUI used memory: 86 MB. Current time: 9/22/26, 5:26:31 PM CDT
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// bz (cs):  Save Design : addNotify
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1343 ms.
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd>  Wrote  : </home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/ui/bd_65dee2cb.ui>  
+dismissDialog("Save Design"); // bz (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// aI (cs): Generate Output Products: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1343 ms.
+// Elapsed time: 29 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bz (cs):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: generate_target all [get_files  /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 2,956 MB (+26189kb) [00:06:00]
+// Tcl Message: VHDL Output written to : /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.v VHDL Output written to : /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/sim/staged_mac_bd.v VHDL Output written to : /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hdl/staged_mac_bd_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,956 MB. GUI used memory: 86 MB. Current time: 9/22/26, 5:27:21 PM CDT
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 . 
+// Tcl Message: Exporting to file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd.hwh Generated Block Design Tcl file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/hw_handoff/staged_mac_bd_bd.tcl Generated Hardware Definition File /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/synth/staged_mac_bd.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 8787.859 ; gain = 0.000 ; free physical = 24273 ; free virtual = 43590 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all staged_mac_bd_auto_pc_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP staged_mac_bd_auto_pc_0, cache-ID = 8d7bf0866b9b21d2; cache size = 13.136 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: catch { config_ip_cache -export [get_ips -all staged_mac_bd_system_ila_0_0] } 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs staged_mac_bd_system_ila_0_0_synth_1 -jobs 4 
+// Tcl Message: [Tue Sep 22 17:27:25 2026] Launched staged_mac_bd_system_ila_0_0_synth_1... Run output will be captured here: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/staged_mac_bd_system_ila_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1225 ms.
+// TclEventType: FILE_SET_CHANGE
+// 'bv' command handler elapsed time: 54 seconds
+// Elapsed time: 25 seconds
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1213 ms.
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+// WARNING: HEventQueue.dispatchEvent() is taking  1232 ms.
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 17 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa ... 
+// bz (cs):  Export Hardware Platform : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,037 MB. GUI used memory: 89 MB. Current time: 9/22/26, 5:28:21 PM CDT
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (/remote/Xilinx/2020.1/Vivado/2020.1/data/embeddedsw) loading 1 seconds 
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8894.297 ; gain = 0.000 ; free physical = 22735 ; free virtual = 42191 
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 146 MB (+418kb) [00:07:17]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  4786 ms.
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (J, cs)
+// [GUI Memory]: 156 MB (+2409kb) [00:07:49]
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1284 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 8 seconds
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// WARNING: HEventQueue.dispatchEvent() is taking  1012 ms.
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 22 17:29:20 2026] Launched synth_1... Run output will be captured here: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/synth_1/runme.log [Tue Sep 22 17:29:20 2026] Launched impl_1... Run output will be captured here: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1298 ms.
+// Elapsed time: 203 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ag)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,096 MB. GUI used memory: 97 MB. Current time: 9/22/26, 5:32:46 PM CDT
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,792 MB. GUI used memory: 96 MB. Current time: 9/22/26, 5:32:54 PM CDT
+// [Engine Memory]: 3,792 MB (+721040kb) [00:11:33]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 170 MB (+6303kb) [00:11:35]
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8952.281 ; gain = 0.000 ; free physical = 23693 ; free virtual = 43218 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 340 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 9570.613 ; gain = 0.000 ; free physical = 23146 ; free virtual = 42670 
+// Tcl Message: Restored from archive | CPU: 0.210000 secs | Memory: 6.493439 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.20 . Memory (MB): peak = 9570.613 ; gain = 0.000 ; free physical = 23146 ; free virtual = 42670 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9575.613 ; gain = 0.000 ; free physical = 23145 ; free virtual = 42670 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 138 instances were transformed.   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 60 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances   RAM64M => RAM64M (RAMD64E(x4)): 56 instances   RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 9793.547 ; gain = 899.250 ; free physical = 22953 ; free virtual = 42481 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 181 MB (+3028kb) [00:11:36]
+// [GUI Memory]: 191 MB (+427kb) [00:11:36]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dZ' command handler elapsed time: 14 seconds
+// Elapsed time: 14 seconds
+dismissDialog("Open Implemented Design"); // bz (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1301 ms.
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+// WARNING: HEventQueue.dispatchEvent() is taking  1237 ms.
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+// Tcl Command: 'get_property pfm_name [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}]'
+// Elapsed time: 10 seconds
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 21 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {/home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.srcs/sources_1/bd/staged_mac_bd/staged_mac_bd.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// bz (cs):  Export Hardware Platform : addNotify
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa ... 
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/staged_mac_bd_wrapper.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9793.547 ; gain = 0.000 ; free physical = 23082 ; free virtual = 42610 
+// WARNING: HEventQueue.dispatchEvent() is taking  1025 ms.
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// [GUI Memory]: 203 MB (+2986kb) [00:13:42]
+// Elapsed time: 125 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// bz (cs):  Launch Vitis IDE : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1157 ms.
+dismissDialog("Launch Vitis IDE"); // bz (cs)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4269 ms. Increasing delay to 12807 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 25 ms. Decreasing delay to 2025 ms.
+// [GUI Memory]: 215 MB (+2049kb) [00:25:25]
+// Device view-level: 0.5
+// [GUI Memory]: 229 MB (+2925kb) [00:40:25]
+// [Engine Memory]: 3,982 MB (+893kb) [00:41:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,015 MB. GUI used memory: 160 MB. Current time: 9/22/26, 6:02:57 PM CDT
+// Elapsed time: 1988 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32); // u (J, cs)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32); // u (J, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 33, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, "Open New Target..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD
+// aN (cs): Open New Hardware Target: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, aN)
+selectButton("BACK", "< Back"); // JButton (j, aN)
+selectButton("CANCEL", "Cancel"); // JButton (j, aN)
+// 'H' command handler elapsed time: 6 seconds
+dismissDialog("Open New Hardware Target"); // aN (cs)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210248B9DAE0 (2) ; Open", 1, "xilinx_tcf/Digilent/210248B9DAE0 (2)", 0, true); // t (J, cs) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210248B9DAE0 (2) ; Open", 1, "xilinx_tcf/Digilent/210248B9DAE0 (2)", 0, true, false, false, false, false, true); // t (J, cs) - Double Click - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210248B9DAE0 (2) ; Open", 1, "xilinx_tcf/Digilent/210248B9DAE0 (2)", 0, true); // t (J, cs) - Node
+expandTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210248B9DAE0 (2) ; Open", 1); // t (J, cs)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210248B9DAE0 (2) ; Open", 1, "xilinx_tcf/Digilent/210248B9DAE0 (2)", 0, true, false, false, false, false, true); // t (J, cs) - Double Click - Node
+// Elapsed time: 29 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (ds, cs)
+selectMenuItem((HResource) null, "xc7z020_1"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// bz (cs):  Refresh Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Refresh Device"); // bz (cs)
+// Elapsed time: 502 seconds
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (2) ; Programmed", 3, "xc7z020_1 (2)", 0, true, false, false, false, true, false); // t (J, cs) - Popup Trigger - Node
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (2) ; Programmed", 3, "xc7z020_1 (2)", 0, true, false, false, false, true, false); // t (J, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_DEVICE, "Refresh Device"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// bz (cs):  Refresh Device : addNotify
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_ILA_CHANGE
+dismissDialog("Refresh Device"); // bz (cs)
+// Elapsed time: 11 seconds
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_CANCEL, "Cancel"); // a (E, ResizableWindow)
+selectButton(PAResourceItoN.IlaProbeTablePanel_SPECIFY_PROBES_FILE_AND_REFRESH, "Specify the probes file and refresh the device"); // d (c, cs)
+// bK (cs): Refresh Device: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1618 ms.
+selectButton(PAResourceQtoS.RefreshDeviceDialog_REFRESH_DEVICE, "Refresh"); // a (bK)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+dismissDialog("Refresh Device"); // bK (cs)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_ILA_CHANGE
+// bz (cs):  Refresh Device : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1344 ms.
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: Processing Interface staged_mac_0_MO_AXIS_ila1_slot0 
+dismissDialog("Refresh Device"); // bz (cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,061 MB. GUI used memory: 167 MB. Current time: 9/22/26, 6:20:27 PM CDT
+// Elapsed time: 11 seconds
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : staged_mac_0_MO_AXIS : TDATA]", 4, false); // N (J, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H]   ; XXXX_XXXX ; probe0[31:0] ; ", 0, "XXXX_XXXX", 3); // A (J, cs)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "0000_0006"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "XXXX_XXXX", 0, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq32'h0000_0006 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTableHeader(PAResourceTtoZ.TriggerSetupPanel_TABLE, "Operator", 1); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H]   ; 0000_0006 ; probe0[31:0] ; 1 of 1", 0, "[H]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]  ", 0, "Radix", 2); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H]   ; 0000_0006 ; probe0[31:0] ; 1 of 1", 0, "0000_0006", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq32'b0000_0000_0000_0000_0000_0000_0000_0110 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// Elapsed time: 42 seconds
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : axis_subset_converter_0_M_AXIS : TVALID]", 3, false); // N (J, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : axis_subset_converter_0_M_AXIS : TLAST]", 1, false, false, true, false, false, false); // N (J, ResizableWindow) - Control Key
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : axis_subset_converter_0_M_AXIS : TREADY]", 2, false, false, true, false, false, false); // N (J, ResizableWindow) - Control Key
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : axis_subset_converter_0_M_AXIS : TID]", 0, false, false, true, false, false, false); // N (J, ResizableWindow) - Control Key
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+// Elapsed time: 11 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TVALID ; ==   ; [B]   ; X ; probe2[0] ; ", 1, "X", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 1, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TLAST ; ==   ; [B]   ; X ; probe4[0] ; ", 2, "X", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 2, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TREADY ; ==   ; [B]   ; X ; probe3[0] ; ", 3, "X", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 3, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [H]   ; XX ; probe1[7:0] ; ", 4, "slot_0 : axis_subset_converter_0_M_AXIS : TID", 0); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TLAST ; ==   ; [B]   ; 1 ; probe4[0] ; 1 of 1", 2, "==  ", 1); // A (J, cs)
+// Elapsed time: 13 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TLAST ; ==   ; [B]   ; 1 ; probe4[0] ; 1 of 1", 2, "[B]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[B]  ", 2, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'u1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [B]   ; 0000_0000_0000_0000_0000_0000_0000_0110 ; probe0[31:0] ; 1 of 1", 0, "==  ", 1); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "==  ", 0, "Operator", 1); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [B]   ; 0000_0000_0000_0000_0000_0000_0000_0110 ; probe0[31:0] ; 1 of 1", 0, "[B]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[B]  ", 0, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq32'u6 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TREADY ; ==   ; [B]   ; 1 ; probe3[0] ; 1 of 1", 3, "[B]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[B]  ", 3, "Radix", 2); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TLAST ; ==   ; [U]   ; 1 ; probe4[0] ; 1 of 1", 2, "[U]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[U]  ", 2, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [H]   ; XX ; probe1[7:0] ; ", 4, "[H]  ", 2); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [H]   ; XX ; probe1[7:0] ; ", 4, "[H]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]  ", 4, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq8's0 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [S]   ; 0 ; probe1[7:0] ; 1 of 1", 4, "[S]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[S]  ", 4, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq8'b0000_0000 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// Elapsed time: 49 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [B]   ; 0000_0000 ; probe1[7:0] ; 1 of 1", 4, "[B]  ", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[B]  ", 4, "Radix", 2); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TID ; ==   ; [B]   ; 0000_0000 ; probe1[7:0] ; 1 of 1", 4, "0000_0000", 3); // A (J, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1507 ms.
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "XXXX_XXXX"); // bW (Q, ResizableWindow)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0000_0000", 4, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq8'bXXXX_XXXX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// Elapsed time: 12 seconds
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-22 18:24:08 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,081 MB. GUI used memory: 165 MB. Current time: 9/22/26, 6:24:09 PM CDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,081 MB. GUI used memory: 165 MB. Current time: 9/22/26, 6:24:09 PM CDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-22 18:24:08 
+// Tcl Message: Processed interface staged_mac_0_MO_AXIS_ila1_slot0 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,073 MB. GUI used memory: 165 MB. Current time: 9/22/26, 6:24:17 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,073 MB. GUI used memory: 166 MB. Current time: 9/22/26, 6:24:22 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,073 MB. GUI used memory: 165 MB. Current time: 9/22/26, 6:26:06 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,074 MB. GUI used memory: 162 MB. Current time: 9/22/26, 6:26:11 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,074 MB. GUI used memory: 163 MB. Current time: 9/22/26, 6:26:18 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 4,074 MB. GUI used memory: 162 MB. Current time: 9/22/26, 6:26:19 PM CDT
+// Elapsed time: 135 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 580, 58); // n (o, cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 73 seconds
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : staged_mac_0_MO_AXIS : TDATA]", 4, false); // N (J, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+// Elapsed time: 21 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H] ;  ; probe0[31:0] ; ", 5, "[H]", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]", 5, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u0} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// bz (cs):  Set Trigger Compare Value : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1277 ms.
+dismissDialog("Set Trigger Compare Value"); // bz (cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 0 ; probe0[31:0] ; Out of comparators", 5, "0", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0", 5, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, slot_0 : staged_mac_0_MO_AXIS : TDATA]", 4, false); // N (J, ResizableWindow)
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H] ;  ; probe0[31:0] ; ", 6, "[H]", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]", 6, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141 eq32'u0} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 0 ; probe0[31:0] ; Out of comparators", 6, "0", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0", 6, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141 eq32'u299} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceItoN.IlaProbeTablePanel_ADD_PROBE, "IlaProbeTablePanel_new"); // E (g, cs)
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.AddIlaProbesPopup_OK, "OK"); // a (E, ResizableWindow)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H] ;  ; probe0[31:0] ; ", 7, (String) null, 3); // A (J, cs)
+setText(PAResourceOtoP.ProbeValueTablePanel_TEXT_FIELD, "0000_0XXX"); // bW (Q, ResizableWindow)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H] ;  ; probe0[31:0] ; ", 7, (String) null, 3); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [H] ;  ; probe0[31:0] ; ", 7, "[H]", 2); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "[H]", 7, "Radix", 2); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141 eq32'u299 eq32'u0} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 0 ; probe0[31:0] ; Out of comparators", 7, "0", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "0", 7, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141 eq32'u299 eq32'u18} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TREADY ; ==   ; [B]   ; 1 ; probe3[0] ; 1 of 1", 3, "1", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 3, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bz (cs):  Set Trigger Compare Value : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1417 ms.
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+dismissDialog("Set Trigger Compare Value"); // bz (cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TLAST ; ==   ; [B]   ; 1 ; probe4[0] ; 1 of 1", 2, "1", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 2, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TVALID ; ==   ; [B]   ; 1 ; probe2[0] ; 1 of 1", 1, "1", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "1", 1, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// bz (cs):  Set Trigger Compare Value : addNotify
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+dismissDialog("Set Trigger Compare Value"); // bz (cs)
+selectButton(PAResourceEtoH.HardwareIlaWaveformView_RUN_TRIGGER_FOR_THIS_ILA_CORE, "Waveform Viewer_run_trigger"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}] 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Labtools 27-3241] Unable to fit compare values for hw_ila 'hw_ila_1'. Multiple compare values for the same ILA trigger port, can only be merged into the same comparator if 1) the overall trigger condition is 'AND', 'NAND' and 2) the compare value operator for multi-bit hw_probes is 'eq'.  
+// ar (cs): Run Trigger: addNotify
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (ar)
+dismissDialog("Run Trigger"); // ar (cs)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]' 
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DEBUG_PROBE_CHANGE
+// bz (cs):  Undo : addNotify
+typeControlKey(null, null, 'z');
+dismissDialog("Undo"); // bz (cs)
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DEBUG_PROBE_CHANGE
+typeControlKey(null, null, 'z');
+// bz (cs):  Undo : addNotify
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]' 
+// TclEventType: DEBUG_PROBE_CHANGE
+typeControlKey(null, null, 'z');
+dismissDialog("Undo"); // bz (cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 18 ; probe0[31:0] ; Out of comparators", 7, "slot_0 : staged_mac_0_MO_AXIS : TDATA", 0, false, false, false, true, false); // A (J, cs) - Popup Trigger
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBES, "Remove"); // ai (ao, cs)
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141 eq32'u299} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// bz (cs):  Set Trigger Compare Value : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1410 ms.
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Debug Probe Value Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 141 ; probe0[31:0] ; Out of comparators", 5, "slot_0 : staged_mac_0_MO_AXIS : TDATA", 0, false, false, false, true, false); // A (J, cs) - Popup Trigger
+dismissDialog("Set Trigger Compare Value"); // bz (cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 299 ; probe0[31:0] ; Out of comparators", 6, "slot_0 : staged_mac_0_MO_AXIS : TDATA", 0, false, false, false, true, false); // A (J, cs) - Popup Trigger
+selectMenuItem(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBES, "Remove"); // ai (ao, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE {eq32'u6 eq32'u141} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 141 ; probe0[31:0] ; Out of comparators", 5, "slot_0 : staged_mac_0_MO_AXIS : TDATA", 0); // A (J, cs)
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : staged_mac_0_MO_AXIS : TDATA ; ==   ; [U]   ; 141 ; probe0[31:0] ; Out of comparators", 5, "slot_0 : staged_mac_0_MO_AXIS : TDATA", 0, false, false, false, true, false); // A (J, cs) - Popup Trigger
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.IlaProbeTablePanel_REMOVE_SELECTED_PROBES, "Remove"); // ai (ao, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq32'u6 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// bz (cs):  Set Trigger Compare Value : addNotify
+// WARNING: updateGUI() is taking  1112 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1117 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+dismissDialog("Set Trigger Compare Value"); // bz (cs)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,078 MB. GUI used memory: 155 MB. Current time: 9/22/26, 6:30:12 PM CDT
+// Elapsed time: 78 seconds
+selectTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "slot_0 : axis_subset_converter_0_M_AXIS : TREADY ; ==   ; [B]   ; X ; probe3[0] ; ", 3, "X", 3); // A (J, cs)
+editTable(PAResourceTtoZ.TriggerSetupPanel_TABLE, "X", 3, "Value", 3); // A (J, cs)
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Sep-22 18:31:23 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: HW_WAVE_ZIP_EXPORT_DONE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Sep-22 18:31:23 
+// Tcl Message: Processed interface staged_mac_0_MO_AXIS_ila1_slot0 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/zachdixo/cpre-487/lab03/CPRE-487-Lab03/cpre487-587-lab3-main/simple_interface/vivado/simple_interface/simple_interface.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 4,078 MB. GUI used memory: 155 MB. Current time: 9/22/26, 6:31:27 PM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,078 MB. GUI used memory: 156 MB. Current time: 9/22/26, 6:31:30 PM CDT

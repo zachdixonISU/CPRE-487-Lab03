@@ -1,0 +1,146 @@
+$date
+        2026-Sep-22 18:31:24
+$end
+$version
+        Vivado v2020.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 32 " staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tdata [31:0] $end
+$var reg 8 B staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid [7:0] $end
+$var reg 1 J staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid $end
+$var reg 1 K staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready $end
+$var reg 1 L staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast $end
+$var reg 3 M Interface__i1_s0___staged_mac_0_MO_AXIS_ [2:0] $end
+$var reg 3 P T_Channel__i1_s0___staged_mac_0_MO_AXIS_ [2:0] $end
+$var reg 1 S _TRIGGER $end
+$var reg 1 T _WINDOW $end
+$var reg 1 U _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 "
+b0 B
+0J
+1K
+0L
+b0 M
+b0 P
+0S
+1T
+0U
+$end
+#47
+1J
+1L
+b1 M
+b10 P
+#48
+0J
+0L
+b0 M
+b0 P
+#140
+1J
+1L
+b1 M
+b10 P
+#141
+0J
+0L
+b0 M
+b0 P
+#233
+1J
+1L
+b1 M
+b10 P
+#234
+0J
+0L
+b0 M
+b0 P
+#326
+1J
+1L
+b1 M
+b10 P
+#327
+0J
+0L
+b0 M
+b0 P
+#419
+1J
+1L
+b1 M
+b10 P
+#420
+0J
+0L
+b0 M
+b0 P
+#512
+1J
+1L
+b1 M
+b10 P
+1S
+#513
+0J
+0L
+b0 M
+b0 P
+#605
+1J
+1L
+b1 M
+b10 P
+#606
+0J
+0L
+b0 M
+b0 P
+#698
+1J
+1L
+b1 M
+b10 P
+#699
+0J
+0L
+b0 M
+b0 P
+#791
+1J
+1L
+b1 M
+b10 P
+#792
+0J
+0L
+b0 M
+b0 P
+#884
+1J
+1L
+b1 M
+b10 P
+#885
+0J
+0L
+b0 M
+b0 P
+#977
+1J
+1L
+b1 M
+b10 P
+#978
+0J
+0L
+b0 M
+b0 P
