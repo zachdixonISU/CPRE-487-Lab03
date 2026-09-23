@@ -76,3 +76,14 @@ set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes staged_mac_bd_i/system_
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"staged_mac_bd_i/system_ila_0/inst/ila_lib"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast} }
+set_property NAME.CUSTOM {slot_0 : axis_subset_converter_0_M_AXIS : TLAST} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tlast] 
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid} }
+set_property NAME.CUSTOM {slot_0 : axis_subset_converter_0_M_AXIS : TVALID} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tvalid] 
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid} }
+set_property NAME.CUSTOM {slot_0 : axis_subset_converter_0_M_AXIS : TID} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tid] 
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready} }
+set_property NAME.CUSTOM {slot_0 : axis_subset_converter_0_M_AXIS : TREADY} [get_hw_probes staged_mac_bd_i/system_ila_0/inst/net_slot_0_axis_tready] 

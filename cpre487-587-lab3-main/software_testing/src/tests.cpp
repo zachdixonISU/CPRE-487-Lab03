@@ -99,7 +99,7 @@ void run_tests() {
 
     send_mac(weight2, activation2, 7);
     output = recieve_mac();
-    std::cout << "Expected calculation for zedboard: " << soft_mac_calc <<  std::endl;
+    std::cout << "Expected calculation for zedboard: " << soft_mac_calc <<  std::endl;GIT 
     std::cout << "Test 2 output from VDHL MAC operation: " << output << std::endl;
     std::cout << "" << std::endl;
 
