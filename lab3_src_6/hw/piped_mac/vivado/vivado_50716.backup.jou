@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Sep 18 03:42:23 2026
+# Process ID: 50716
+# Current directory: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado
+# Command line: vivado -mode batch -source tc_piped_mac_ip.tcl
+# Log file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/vivado.log
+# Journal file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/vivado.jou
+#-----------------------------------------------------------
+source tc_piped_mac_ip.tcl
