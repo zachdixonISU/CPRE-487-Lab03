@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Sep 18 04:05:59 2026
+# Process ID: 63480
+# Current directory: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl
+# Command line: vivado /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.xpr
+# Log file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl/vivado.log
+# Journal file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.srcs/sources_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/remote/Xilinx/2020.1/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Sep 18 04:06:19 2026] Launched synth_1...
+Run output will be captured here: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Sep 18 04:07:31 2026] Launched impl_1...
+Run output will be captured here: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 18 04:28:13 2026...

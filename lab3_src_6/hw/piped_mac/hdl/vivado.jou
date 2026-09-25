@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Sep 18 04:05:59 2026
+# Process ID: 63480
+# Current directory: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl
+# Command line: vivado /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.xpr
+# Log file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl/vivado.log
+# Journal file: /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/hdl/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/jwk0425/487lab3/CPRE-487-Lab03/cpre487-587-lab3-main/piped_mac/vivado/tc_piped_mac/tc_piped_mac.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
